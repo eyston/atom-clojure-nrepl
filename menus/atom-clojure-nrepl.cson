@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable atom-clojure-nrepl': 'atom-clojure-nrepl:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'atom-clojure-nrepl'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'atom-clojure-nrepl:toggle' }
+      ]
+    ]
+  }
+]

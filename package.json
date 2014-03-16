@@ -1,0 +1,14 @@
+{
+  "name": "atom-clojure-nrepl",
+  "main": "./lib/atom-clojure-nrepl",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "activationEvents": ["atom-clojure-nrepl:toggle"],
+  "repository": "https://github.com/atom/atom-clojure-nrepl",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}
