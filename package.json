@@ -1,8 +1,8 @@
 {
   "name": "atom-clojure-nrepl",
   "main": "./lib/atom-clojure-nrepl",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.0.1",
+  "description": "Clojure nREPL integration for atom",
   "activationEvents": [
     "atom-clojure-nrepl:evaluate-last-expression",
     "atom-clojure-nrepl:evaluate-file",
