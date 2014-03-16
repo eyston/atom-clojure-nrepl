@@ -3,7 +3,11 @@
   "main": "./lib/atom-clojure-nrepl",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "activationEvents": ["atom-clojure-nrepl:toggle"],
+  "activationEvents": [
+    "atom-clojure-nrepl:evaluate-last-expression",
+    "atom-clojure-nrepl:evaluate-file",
+    "atom-clojure-nrepl:evaluate-containing-expression"
+  ],
   "repository": "https://github.com/atom/atom-clojure-nrepl",
   "license": "MIT",
   "engines": {

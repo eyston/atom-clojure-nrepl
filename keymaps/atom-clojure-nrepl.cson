@@ -7,5 +7,7 @@
 
 # For more detailed documentation see
 # https://atom.io/docs/latest/advanced/keymaps
-'.workspace':
-  'ctrl-alt-o': 'atom-clojure-nrepl:toggle'
+'.editor':
+  'ctrl-enter': 'atom-clojure-nrepl:evaluate-last-expression'
+  'shift-ctrl-enter': 'atom-clojure-nrepl:evaluate-file'
+  'alt-ctrl-enter': 'atom-clojure-nrepl:evaluate-containing-expression'
