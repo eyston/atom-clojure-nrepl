@@ -21,13 +21,13 @@ module.exports =
     editor = atom.workspace.activePaneItem
     expression = expressions.lastExpression(editor)
     console.log('evaluating last expression\n', expression)
-    nrepl.evaluate(expression)
+    nrepl.evaluate(expression, (err, result) -> console.log(err || result))
 
   evaluateFile: ->
     editor = atom.workspace.activePaneItem
     expression = expressions.file(editor)
     console.log('evaluating file\n', expression)
-    nrepl.evaluate(expression)
+    nrepl.evaluate(expression, (err, result) -> console.log(err || result))
 
   evaluateContainingExpression: ->
     editor = atom.workspace.activePaneItem
