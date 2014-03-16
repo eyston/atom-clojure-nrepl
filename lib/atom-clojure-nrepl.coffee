@@ -1,4 +1,5 @@
 AtomClojureNreplView = require './atom-clojure-nrepl-view'
+expressions = require './expressions'
 
 module.exports =
   atomClojureNreplView: null
@@ -16,10 +17,13 @@ module.exports =
     atomClojureNreplViewState: @atomClojureNreplView.serialize()
 
   evaluateLastExpression: ->
-    console.log('evaluating last expression')
+    editor = atom.workspace.activePaneItem
+    console.log('evaluating last expression\n', expressions.lastExpression(editor))
 
   evaluateFile: ->
-    console.log('evaluating file')
+    editor = atom.workspace.activePaneItem
+    console.log('evaluating file\n', expressions.file(editor))
 
   evaluateContainingExpression: ->
-    console.log('evaluating containing expression')
+    editor = atom.workspace.activePaneItem
+    console.log('evaluating containing expression\n')
